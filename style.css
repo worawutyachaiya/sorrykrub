@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffebf0; /* พื้นหลังชมพูอ่อน */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff7fa; /* สีชมพูอ่อนๆ */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.animated-text {
+    font-size: 2.5em;
+    color: #ff9aa2; /* สีชมพูสดใส */
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.message {
+    font-size: 1.2em;
+    color: #6b5b95; /* สีม่วงอ่อนน่ารัก */
+    margin-top: 20px;
+    animation: fadeIn 4s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
